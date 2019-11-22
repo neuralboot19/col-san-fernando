@@ -34,26 +34,26 @@
       <div class="mr-auto">
         <nav class="site-navigation position-relative text-right" role="navigation">
           <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-            <li class="active">
+            <li class="<%= 'active' if current_page?(root_path) %>">
               <a href="/" class="nav-link text-left">Home</a>
             </li>
-            <li class="has-children">
-              <a class="nav-link text-left">About Us</a>
+            <li class="has-children <%= 'active' if current_page?(aboutus_path) %>">
+              <%= link_to 'About Us', aboutus_path, class:"nav-link text-left" %>
               <ul class="dropdown">
-                <li><a href="teachers.html">View</a></li>
-                <li><a href="about.html">Mission</a></li>
-                <li><a href="about.html">History</a></li>
+                <li><%= link_to 'View', aboutus_path %></li>
+                <li><%= link_to 'Mission', aboutus_path %></li>
+                <li><%= link_to 'History', aboutus_path %></li>
               </ul>
             </li>
-            <li>
-              <a href="admissions.html" class="nav-link text-left">Admissions</a>
+            <li class="<%= 'active' if current_page?(admissions_path) %>">
+              <%= link_to 'Admissions', admissions_path, class:"nav-link text-left" %>
             </li>
             <li>
-              <a href="courses.html" class="nav-link text-left">Virtual Classroom</a>
+              <a href="#" class="nav-link text-left">Virtual Classroom</a>
             </li>
-            <li>
-                <a href="contact.html" class="nav-link text-left">Contact</a>
-              </li>
+            <li class="<%= 'active' if current_page?(contact_index_path) %>">
+              <%= link_to 'Contact', contact_index_path, class:"nav-link text-left" %>
+            </li>
           </ul>                                                                                                                                                                                                                                                                                          </ul>
         </nav>
       </div>
@@ -62,8 +62,7 @@
           <a href="#"><span class="icon-facebook"></span></a>
           <a href="#"><span class="icon-linkedin"></span></a>
           <a href="#"><span class="icon-whatsapp"></span></a>
-          <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
-            class="icon-menu h3"></span></a>
+          <%#<a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a>%>
         </div>
       </div>
     </div>
