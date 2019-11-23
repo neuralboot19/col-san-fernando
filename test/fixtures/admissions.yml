@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  descrition_one: MyString
+  description_two: MyString
+  lis_one: MyString
+  lis_two: MyString
+  lis_three: MyString
+  lis_four: MyString
+  lis_five: MyString
+  lis_six: MyString
+  lis_seven: MyString
+  lis_eight: MyString
+  lis_nine: MyString
+  lis_ten: MyString
+  image: MyString
+  visible: false
+
+two:
+  title: MyString
+  descrition_one: MyString
+  description_two: MyString
+  lis_one: MyString
+  lis_two: MyString
+  lis_three: MyString
+  lis_four: MyString
+  lis_five: MyString
+  lis_six: MyString
+  lis_seven: MyString
+  lis_eight: MyString
+  lis_nine: MyString
+  lis_ten: MyString
+  image: MyString
+  visible: false

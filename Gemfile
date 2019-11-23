@@ -43,6 +43,12 @@ gem 'activeadmin', '~> 2.4'
 gem 'font-awesome-sass', '~> 5.6', '>= 5.6.1'
 # Use Arctic Admin
 gem 'arctic_admin', '~> 3.0'
+# Use Cloudinary
+gem 'cloudinary', '~> 1.11', '>= 1.11.1'
+# Use Rest Client
+gem 'rest-client', '~> 2.0', '>= 2.0.2'
+# Use Carrierwave
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -2,7 +2,7 @@
   <% if !a.visible %>
     <div class="row mb-5">
       <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-        <img src="images/course_5.jpg" alt="Image" class="img-fluid"> 
+        <img src="<%= a.image.url(:thumbnail) %>" alt="Image" class="img-fluid"> 
       </div>
       <div class="col-lg-5 mr-auto align-self-center order-2 order-lg-1">
         <h2 class="section-title-underline mb-5">

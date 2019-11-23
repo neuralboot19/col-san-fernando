@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dayqwi0js
+  api_key: '971324638357862'
+  api_secret: h-rAVxIe3IKdOCnwTH7Z4Mj3ft8
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dayqwi0js
+  api_key: '971324638357862'
+  api_secret: h-rAVxIe3IKdOCnwTH7Z4Mj3ft8
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dayqwi0js
+  api_key: '971324638357862'
+  api_secret: h-rAVxIe3IKdOCnwTH7Z4Mj3ft8
+  enhance_image_tag: true
+  static_image_support: false

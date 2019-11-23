@@ -1,0 +1,28 @@
+<% @admissions.each do |ad| %>
+  <% if ad.visible %>
+    <div class="row">
+      <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+        <img src="<%= ad.image.url(:thumbnail)%>" alt="Image" class="img-fluid"> 
+      </div>
+      <div class="col-lg-5 mr-auto align-self-center order-2 order-lg-1">
+        <h2 class="section-title-underline mb-5">
+          <span><%= ad.title %></span>
+        </h2>
+        <p><%= ad.descrition_one %></p>
+        <p><%= ad.description_two %></p>
+        <ol class="ul-check primary list-unstyled">
+          <li><%= ad.item_one %></li>
+          <li><%= ad.item_two %></li>
+          <li><%= ad.item_three %></li>
+          <li><%= ad.item_four %></li>
+          <li><%= ad.item_five %></li>
+          <li><%= ad.item_six %></li>
+          <li><%= ad.item_seven %></li>
+          <li><%= ad.item_eight %></li>
+          <li><%= ad.item_nine %></li>
+          <li><%= ad.item_ten %></li>
+        </ol>
+      </div>
+    </div>
+  <% end %>
+<% end %>
