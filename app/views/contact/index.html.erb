@@ -18,22 +18,30 @@
 </div>
 <div class="site-section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 form-group">
-        <label for="eaddress">Email Address</label>
-        <p class="form-control-lg">info@info.com</p>
-      </div>
-      <div class="col-md-6 form-group">
-        <label for="tel">Tel. Number</label>
-        <p class="form-control-lg">022283770</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 form-group">
-        <label for="message">Address</label>
-        <p class="form-control-lg">Flores 206 y Bolivar Plaza de Santo Domingo.</p>
-      </div>
-    </div>
+    <% @contacts.each do |c| %>
+      <% if c.visible %>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="eaddress">Email Address</label>
+            <p class="form-control-lg"><%= c.email %></p>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="tel">Tel. Number</label>
+            <p class="form-control-lg"><%= c.phone %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+    <% @contacts.each do |c| %>
+      <% if c.visible %>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="message">Address</label>
+            <p class="form-control-lg"><%= c.address %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </div>
 <%= render "common/footer" %>

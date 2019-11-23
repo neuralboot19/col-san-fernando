@@ -9,18 +9,38 @@
       <div class="col-lg-3">
         <h3 class="footer-heading"><span>About Us</span></h3>
         <ul class="list-unstyled">
-          <li><a href="#">View</a></li>
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">History</a></li>
+          <% @abouts.each do |a| %>
+            <% if !a.visible %>
+              <li><%= link_to a.title, aboutus_path %></li>
+            <% end %>
+          <% end %>
         </ul>
       </div>
       <div class="col-lg-3">
         <h3 class="footer-heading"><span>Contact</span></h3>
         <ul class="list-unstyled">
-          <li><a href="#">WhatsApp</a></li>
-          <li><a href="#">Tel.</a></li>
-          <li><a href="#">Correo</a></li>
-          <li><a href="#">Dirección</a></li>
+          <% @contacts.each do |c| %>
+            <% if c.visible %>
+              <li>
+                <p style="color: #51be78"><span class="icon-map"> <%= c.address %></p>
+              </li>
+              <li>
+                <%= link_to :target => "_blank" do %>
+                  <span class="icon-envelope-o"> <%= c.email %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to :target => "_blank" do %>
+                  <span class="icon-phone2"> <%= c.phone %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to c.whatsapp, :target => "_blank" do %>
+                  <span class="icon-whatsapp"> WhatsApp
+                <% end %>
+              </li>
+            <% end %>
+          <% end %>
         </ul>
       </div>
       <div class="col-lg-3">

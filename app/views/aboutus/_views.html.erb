@@ -1,0 +1,16 @@
+<% @abouts.each do |a| %>
+  <% if !a.visible %>
+    <div class="row mb-5">
+      <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+        <img src="images/course_5.jpg" alt="Image" class="img-fluid"> 
+      </div>
+      <div class="col-lg-5 mr-auto align-self-center order-2 order-lg-1">
+        <h2 class="section-title-underline mb-5">
+          <span><%= a.title %></span>
+        </h2>
+        <p><%= a.description_one %></p>
+        <p><%= a.description_two %></p>
+      </div>
+    </div>
+  <% end %>
+<% end %>

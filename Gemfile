@@ -5,8 +5,8 @@ ruby '2.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use pg as the database for Active Record
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -35,6 +35,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+# Use Devide
+gem 'devise', '~> 4.7', '>= 4.7.1'
+# Use Active Admin
+gem 'activeadmin', '~> 2.4'
+# Use Font Awesome Sass
+gem 'font-awesome-sass', '~> 5.6', '>= 5.6.1'
+# Use Arctic Admin
+gem 'arctic_admin', '~> 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
