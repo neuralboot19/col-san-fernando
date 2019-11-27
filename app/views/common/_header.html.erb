@@ -13,7 +13,7 @@
       <div class="col-lg-9 d-none d-lg-block">
         <% @contacts.each do |c| %>
           <% if c.visible %>
-            <a href="/" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> Have a questions?</a>
+            <a href="/" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> Tienes alguna pregunta?</a>
             <a href="/" class="small mr-3"><span class="icon-phone2 mr-2"></span><%= c.phone %></a> 
             <a href="/" class="small mr-3"><span class="icon-envelope-o mr-2"></span><%= c.email %></a> 
           <% end %>
@@ -40,10 +40,10 @@
         <nav class="site-navigation position-relative text-right" role="navigation">
           <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
             <li class="<%= 'active' if current_page?(root_path) %>">
-              <a href="/" class="nav-link text-left">Home</a>
+              <a href="/" class="nav-link text-left">Principal</a>
             </li>
             <li class="has-children <%= 'active' if current_page?(aboutus_path) %>">
-              <%= link_to 'About Us', aboutus_path, class:"nav-link text-left" %>
+              <%= link_to 'Sobre Nosotros', aboutus_path, class:"nav-link text-left" %>
               <ul class="dropdown">
                 <% @abouts.each do |a| %>
                   <% if !a.visible %>
@@ -53,13 +53,13 @@
               </ul>
             </li>
             <li class="<%= 'active' if current_page?(admissions_path) %>">
-              <%= link_to 'Admissions', admissions_path, class:"nav-link text-left" %>
+              <%= link_to 'Admisiones', admissions_path, class:"nav-link text-left" %>
             </li>
             <li>
-              <a href="#" class="nav-link text-left">Virtual Classroom</a>
+              <a href="#" class="nav-link text-left">Aula virtual</a>
             </li>
             <li class="<%= 'active' if current_page?(contact_index_path) %>">
-              <%= link_to 'Contact', contact_index_path, class:"nav-link text-left" %>
+              <%= link_to 'Contacto', contact_index_path, class:"nav-link text-left" %>
             </li>
           </ul>                                                                                                                                                                                                                                                                                          </ul>
         </nav>
