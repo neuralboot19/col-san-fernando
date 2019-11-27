@@ -6,7 +6,7 @@
         <p>Los dominicos pusieron el nombre de San Fernando en agradecimiento a la deferencia que el rey, Fernando III dispenso a los religiosos dominicos en España, quienes fueron sus consejeros y confesores.</p>  
         <p><%= link_to 'Conoce más sobre nosotros...', aboutus_path %></p>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-2">
         <h3 class="footer-heading"><span>Sobre Nosotros</span></h3>
         <ul class="list-unstyled">
           <% @abouts.each do |a| %>
@@ -14,6 +14,27 @@
               <li><%= link_to a.title, aboutus_path %></li>
             <% end %>
           <% end %>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <h3 class="footer-heading"><span>Admisiones</span></h3>
+        <ul class="list-unstyled">
+          <% @admissions.each do |a| %>
+            <% if a.visible %>
+              <li><%= link_to a.title, admissions_path %></li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <h3 class="footer-heading"><span>Aula virtual</span></h3>
+        <ul class="list-unstyled">
+          <li><a href="#">Iniciar sesión</a></li>
+          <%# <li><a href="#">Science &amp; Engineering</a></li> %>
+          <%# <li><a href="#">Arts &amp; Humanities</a></li> %>
+          <%# <li><a href="#">Economics &amp; Finance</a></li> %>
+          <%# <li><a href="#">Business Administration</a></li> %>
+          <%# <li><a href="#">Computer Science</a></li> %>
         </ul>
       </div>
       <div class="col-lg-3">
@@ -41,17 +62,6 @@
               </li>
             <% end %>
           <% end %>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <h3 class="footer-heading"><span>Aula virtual</span></h3>
-        <ul class="list-unstyled">
-          <li><a href="#">Iniciar sesión</a></li>
-          <%# <li><a href="#">Science &amp; Engineering</a></li> %>
-          <%# <li><a href="#">Arts &amp; Humanities</a></li> %>
-          <%# <li><a href="#">Economics &amp; Finance</a></li> %>
-          <%# <li><a href="#">Business Administration</a></li> %>
-          <%# <li><a href="#">Computer Science</a></li> %>
         </ul>
       </div>
     </div>
