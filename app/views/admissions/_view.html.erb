@@ -1,6 +1,6 @@
 <% @admissions.each do |ad| %>
   <% if ad.visible %>
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
         <img src="<%= ad.image.url(:thumbnail)%>" alt="Image" class="img-fluid"> 
       </div>
