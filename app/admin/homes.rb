@@ -1,5 +1,5 @@
 ActiveAdmin.register Home do
-  permit_params :title, :image, :visible
+  permit_params :title, :title_two, :image, :visible
 
   index do
     selectable_column
@@ -8,6 +8,7 @@ ActiveAdmin.register Home do
       image_tag(i.image.url(:standard))
     end
     column :title
+    column :title_two
     column :visible
     actions
   end
@@ -15,6 +16,7 @@ ActiveAdmin.register Home do
   form do |f|
     f.inputs do
       f.input :title
+      f.input :title_two
       f.inputs do
         f.hidden_field :image_cache
         f.file_field :image, style: "margin-left: 21%;"
@@ -27,6 +29,7 @@ ActiveAdmin.register Home do
   show do
     attributes_table do
       row :title
+      row :title_two
       row :image do |i|
         image_tag(i.image.url(:standard))
       end
