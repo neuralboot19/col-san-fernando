@@ -5,7 +5,7 @@ ActiveAdmin.register Contact do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :phone, :mobile, :email, :facebook, :instagram, :whatsapp, :address, :visible
+  permit_params :phone, :mobile, :email, :facebook, :instagram, :whatsapp, :whatsapp_option, :address, :visible
   #
   # or
   #
