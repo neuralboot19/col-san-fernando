@@ -258,7 +258,8 @@ h1, h2, h3, h4, h5,
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active > a {
-      color: #f2b326;
+      color: #000;
+      font-weight: bold;
       display: inline-block;
       padding: 5px 20px; }
     .site-navbar .site-navigation .site-menu a {
@@ -271,11 +272,12 @@ h1, h2, h3, h4, h5,
         color: #969696; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 20px 20px;
-        color: #000;
+        color: #fff;
+        font-weight: bold;
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #f2b326; }
+          color: #000; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -357,7 +359,7 @@ h1, h2, h3, h4, h5,
             background: #f4f5f9;
             color: #25262a; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
-        color: #f2b326; }
+        color: #000; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
         cursor: pointer; }
         .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
@@ -521,7 +523,7 @@ h1, h2, h3, h4, h5,
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    background: #fff; }
+    background-image: url('/images/banner_header.png'); background-repeat: no-repeat; position: relative; background-size: 100% 150%; background-color: rgba(0, 0, 0, 0.24); }
     .sticky-wrapper .site-navbar .site-logo a {
       color: #000; }
     .sticky-wrapper .site-navbar .site-menu > li {
@@ -538,24 +540,24 @@ h1, h2, h3, h4, h5,
           left: 20px;
           right: 20px; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background: #fff;
+    background-image: url('/images/banner_header.png'); background-repeat: no-repeat; position: relative; background-size: 100% 150%; background-color: rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2); }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-      color: #000; }
+      color: #fff; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li {
       display: inline-block; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
         padding: 5px 20px;
-        color: #000;
+        color: #fff;
         display: inline-block;
         text-decoration: none !important; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-          color: #f2b326; }
+          color: #000; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
-          background: #f2b326; }
+          background: #000; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li.active > a {
-        color: #f2b326; }
+        color: #000; }
   .sticky-wrapper .shrink {
     padding-top: 10px !important;
     padding-bottom: 10px !important; }
@@ -707,18 +709,18 @@ h1, h2, h3, h4, h5,
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #f2b326;
+  background: #000;
   position: relative; }
   .social-wrap a > span {
     position: absolute;
-    color: #fff;
+    color: #f2b326;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .social-wrap a:hover {
-    background: #000; }
+    background: #fff; }
 
 .block-number-1 .icon {
   color: #fff;
