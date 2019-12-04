@@ -321,7 +321,9 @@
               <% if c.visible %>
                 <div class="col-lg-6">
                   <div class="post-entry-big">
-                    <a href="news-single.html" class="img-link"><img src="<%= c.image.url(:thumbnail)%>" alt="Image" class="img-fluid"></a>
+                    <%= link_to c.url_link, :class => "img-link", :target => "_blank" do %>
+                      <img src="<%= c.image.url(:thumbnail)%>" alt="Image" class="img-fluid">
+                    <% end %>
                     <div class="post-content">
                       <div class="post-meta"> 
                         <span class="mx-1"><%= c.descrition %></span>
@@ -337,7 +339,9 @@
               <% if c.position %>
                 <div class="col-lg-6">
                   <div class="post-entry-big horizontal d-flex mb-4">
-                    <a href="news-single.html" class="img-link mr-4"><img src="<%= c.image.url(:thumbnail)%>" alt="Image" class="img-fluid"></a>
+                    <%= link_to c.url_link, :class => "img-link mr-4", :target => "_blank" do %>
+                      <img src="<%= c.image.url(:thumbnail)%>" alt="Image" class="img-fluid">
+                    <% end %>
                     <div class="post-content">
                       <div class="post-meta">
                         <span class="mx-1"><%= c.descrition %></span>
