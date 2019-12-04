@@ -85,33 +85,3 @@
     </div>
   </div>
 </header>
-<div class="modal hide fade m-t-5" id="my-modal" title="Form Buy" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Contactos WhatsApp:</h5>
-        <%# <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button> %>
-      </div>
-      <div class="modal-body">
-        <% @contacts.each do |c| %>
-          <% if c.visible %>
-            <p>
-              <b style="margin-right: 2%">Contacto Principal: </b>
-              <span class="symbol-btn-back-to-top" style="font-size: 1.2em;">
-                <%= link_to '+'+c.whatsapp, 'https://api.whatsapp.com/send?phone='+c.whatsapp, class:"fa fa-whatsapp", alt:"WhatsApp", target: "_blank" %>
-              </span>
-            </p>
-            <p>
-              <b style="margin-right: 2%">Contacto Opcional: </b>
-              <span class="symbol-btn-back-to-top" style="font-size: 1.2em;">
-                <%= link_to '+'+c.whatsapp_option, 'https://api.whatsapp.com/send?phone='+c.whatsapp_option, class:"fa fa-whatsapp", alt:"WhatsApp", target: "_blank" %>
-              </span>
-            </p>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
