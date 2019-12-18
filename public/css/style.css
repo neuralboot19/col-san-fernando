@@ -3,7 +3,8 @@ body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  text-align: justify; }
 
 ::-moz-selection {
   background: #000;
@@ -271,8 +272,8 @@ h1, h2, h3, h4, h5,
         font-size: 12px;
         color: #969696; }
       .site-navbar .site-navigation .site-menu > li > a {
-        padding: 20px 20px;
-        color: #fff;
+        padding: 10px 10px;
+        color: #000;
         font-weight: bold;
         display: inline-block;
         text-decoration: none !important; }
@@ -709,7 +710,7 @@ h1, h2, h3, h4, h5,
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #000;
+  background: #fff;
   position: relative; }
   .social-wrap a > span {
     position: absolute;
@@ -957,8 +958,8 @@ h1, h2, h3, h4, h5,
   .ftco-subscribe-1:before {
     position: absolute;
     content: "";
-    background: #000;
-    opacity: .7;
+    background: #ffef00;
+    opacity: .6;
     z-index: 1;
     top: 0;
     left: 0;
@@ -968,7 +969,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     z-index: 2; }
     .ftco-subscribe-1 > .container h2, .ftco-subscribe-1 > .container p {
-      color: #fff; }
+      color: #000; }
   .ftco-subscribe-1 .form-control {
     height: auto !important; }
 

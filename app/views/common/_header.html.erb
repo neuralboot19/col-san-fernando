@@ -28,7 +28,7 @@
     <div class="d-flex align-items-center">
       <div class="mr-auto">
         <nav class="site-navigation position-relative text-right" role="navigation">
-          <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+          <ul class="site-menu main-menu js-clone-nav mr-5 d-none d-lg-block">
             <li class="<%= 'active' if current_page?(root_path) %>">
               <a href="/" class="nav-link text-left">Principal</a>
             </li>
@@ -59,13 +59,13 @@
           <% @contacts.each do |c| %>
             <% if c.visible %>
               <%= link_to c.facebook, :target => "_blank" do %>
-                <span class="icon-facebook">
+                <span class="icon-facebook" style="color: #1877f2">
               <% end %>
               <%= link_to c.instagram, :target => "_blank" do %>
-                <span class="icon-instagram">
+                <span class="icon-instagram" style="color: #d92f7e">
               <% end %>
               <%= link_to "#my-modal", "data-toggle" => "modal" do %>
-                <span class="icon-whatsapp">
+                <span class="icon-whatsapp" style="color: #01d300">
               <% end %>
             <% end %>
           <% end %>
