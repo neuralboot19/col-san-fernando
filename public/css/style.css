@@ -841,6 +841,10 @@ h1, h2, h3, h4, h5,
 .owl-slide .owl-nav {
   display: none; }
 
+.feature-1 {
+  background-color: aliceblue !important;
+}
+
 .feature-1 .icon-wrapper, .person .icon-wrapper {
   position: relative;
   width: 96px;
@@ -1089,3 +1093,14 @@ h1, h2, h3, h4, h5,
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.border-section-image:hover {
+  height: 80px;
+  width: 80px;
+}
+
+.border-section-shadow:hover {
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
