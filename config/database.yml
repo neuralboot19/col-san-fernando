@@ -4,11 +4,17 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
+  username: neural
+  password: 'admin1234'
 
 development:
   <<: *default
   database: col_san_fernando_development
+
+staging:
+  <<: *default
+  database: col_san_fernando_staging
+#
 
 test:
   <<: *default
@@ -18,4 +24,4 @@ production:
   <<: *default
   database: col_san_fernando_production
   username: col_san_fernando
-  password: <%= ENV['COL_SAN_FERNANDO_API_DATABASE_PASSWORD'] %>
+  password: <%= ENV['COL_SAN_FERNANDO_DATABASE_PASSWORD'] %>

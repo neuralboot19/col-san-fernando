@@ -5,7 +5,7 @@ ActiveAdmin.register Contact do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :phone, :mobile, :email, :facebook, :instagram, :whatsapp, :whatsapp_option, :address, :visible
+  permit_params :phone, :mobile, :email, :email_two, :facebook, :instagram, :whatsapp, :whatsapp_option, :address, :visible
   #
   # or
   #
@@ -14,5 +14,21 @@ ActiveAdmin.register Contact do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+  index do
+    selectable_column
+    id_column
+    column :phone
+    column :mobile
+    column :email
+    column :visible
+    column :email_two
+    column :facebook
+    column :instagram
+    column :whatsapp
+    column :whatsapp_option
+    column :address
+    column :visible
+    actions
+  end
   
 end
